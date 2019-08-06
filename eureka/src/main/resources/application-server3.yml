@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: eureka-server
+server:
+  port: 7003
+eureka:
+  instance:
+    hostname: server3
+  client:
+    service-url:
+      defaultZone: http://server2:7002/eureka/,http://server1:7001/eureka/
