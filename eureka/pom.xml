@@ -60,7 +60,7 @@
                         <manifest>
                             <addClasspath>true</addClasspath>
                             <classpathPrefix>lib/</classpathPrefix>
-                            <mainClass>com.learning.eureka.EurekaApplication</mainClass>
+                            <mainClass>com.learning.springcloud.eureka.EurekaApplication</mainClass>
                         </manifest>
                         <manifestEntries>
                             <Class-Path>.</Class-Path>
