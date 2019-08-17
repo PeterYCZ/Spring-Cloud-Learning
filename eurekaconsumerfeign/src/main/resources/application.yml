@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: eureka-consumer
+eureka:
+  client:
+    service-url:
+      defaultZone: http://192.168.81.145:7001/eureka/
+server:
+  port: 8001
+
+feign:
+  hystrix:
+    enabled: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: hystrix.stream
