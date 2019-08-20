@@ -5,10 +5,15 @@ eureka:
   client:
     service-url:
       defaultZone: http://192.168.81.145:7001/eureka/
+
 management:
+  endpoint:
+    health:
+      show-details: always
   endpoints:
     web:
       exposure:
-        include: refresh
+        include: refresh,health
+
 server:
   port: 13000
