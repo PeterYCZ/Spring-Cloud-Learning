@@ -1,0 +1,15 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://192.168.81.145:7001/eureka/
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/PeterYCZ/Spring-Cloud-Learning # 配置git仓库的地址
+          search-paths: config-repo # git仓库地址下的相对地址，可以配置多个，用,分割。
+server:
+  port: 12000
