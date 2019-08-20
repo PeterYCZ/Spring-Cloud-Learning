@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: config-git
+eureka:
+  client:
+    service-url:
+      defaultZone: http://192.168.81.145:7001/eureka/
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh
+server:
+  port: 13000
