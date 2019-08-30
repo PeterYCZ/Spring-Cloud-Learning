@@ -1,8 +1,6 @@
 neo: 
   hello: "test update 2"
   devicelist: '
-    {
-      devicelits:{
         [
           {
             "deviceid": "E001",
@@ -12,6 +10,4 @@ neo:
             "deviceid": "E002",
             "address": 2
           }
-        ]
-      }
-    }'
+        ]'
